@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
@@ -26,6 +28,19 @@ namespace WinFormsApp1
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+        private void MainForm_DoubleClick(object sender, EventArgs e)
+        {
+            clickLabel.Visible = true;
+            var newvar = new Class1();
+            newvar.Name = "";
         }
     }
 }
